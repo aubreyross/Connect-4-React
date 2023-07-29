@@ -1,0 +1,70 @@
+/* main element */
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}
+
+/* container that holds game board */
+.board-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* container that holds the entire game */
+.game-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styles for the board itself */
+.board {
+  display: inline-block;
+  grid-template-columns: repeat(7, 80px);
+  grid-template-rows: repeat(7, 80px);
+  width: 400px;
+  height: 400px;
+  background-color: lightgrey;
+  padding-top: 5px;
+}
+
+/* player info */
+.player {
+  margin-top: 15px; 
+}
+
+/* board stand (base of the board) */
+.board-stand {
+  background-color: lightgrey; 
+  height: 10px; 
+  width: 460px; 
+}
+
+/* Styles for each column in the board */
+.column {
+  display: flex; 
+  justify-content: center; 
+}
+
+/* Styles for each circle (cell) in board */
+.circle {
+  border-radius: 50%; 
+  border: 2px solid lightgrey; 
+  background-color: white;   /* initial color of circle  */
+  width: 50px; 
+  height: 50px; 
+}
+
+/* red circle for red player's moves */
+.circle-red {
+  background-color: red; 
+}
+
+/* black circle for black player's moves */
+.circle-black {
+  background-color: black; 
+}
